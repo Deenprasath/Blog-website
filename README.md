@@ -5,7 +5,7 @@ BlogCraft is a simple and elegant markdown-based blog editor and post manager. I
 ## 🔗 Live Demo
 
 Try the live version here:  
-👉 [BlogCraft Live Demo](https://Deenprasath.github.io/blog-website/)  
+👉 [BlogCraft Live Demo](https://deenprasath.github.io/Blog-website/)  
 
 ## 🚀 Features
 
