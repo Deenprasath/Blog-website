@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogCraft - Markdown Blog Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">BlogCraft</h1>
+                <nav class="nav">
+                    <button id="newPostBtn" class="btn btn-primary">New Post</button>
+                    <button id="savedPostsBtn" class="btn btn-secondary">Saved Posts</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Editor Section -->
+            <div id="editorSection" class="editor-section">
+                <div class="editor-header">
+                    <input type="text" id="postTitle" placeholder="Enter your blog post title..." class="title-input">
+                    <div class="editor-actions">
+                        <button id="saveBtn" class="btn btn-success">Save Post</button>
+                        <button id="previewToggle" class="btn btn-secondary">Toggle Preview</button>
+                    </div>
+                </div>
+                
+                <div class="editor-container">
+                    <div class="editor-pane">
+                        <div class="pane-header">
+                            <h3>Markdown Editor</h3>
+                            <div class="markdown-help">
+                                <span class="help-text">Supports: **bold**, *italic*, # headings, [links](url), `code`</span>
+                            </div>
+                        </div>
+                        <textarea id="markdownEditor" placeholder="Start writing your blog post in Markdown...
+
+# Welcome to BlogCraft!
+
+This is a **powerful** markdown editor that supports:
+
+- **Bold** and *italic* text
+- [Links](https://example.com)
+- `Code snippets`
+- Lists and more!
+
+## Getting Started
+
+Simply start typing your markdown content here and see the live preview on the right!"></textarea>
+                    </div>
+                    
+                    <div class="preview-pane">
+                        <div class="pane-header">
+                            <h3>Live Preview</h3>
+                        </div>
+                        <div id="previewContent" class="preview-content"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Saved Posts Section -->
+            <div id="savedPostsSection" class="saved-posts-section hidden">
+                <div class="posts-header">
+                    <h2>Your Saved Posts</h2>
+                    <button id="backToEditor" class="btn btn-secondary">Back to Editor</button>
+                </div>
+                <div id="postsList" class="posts-list"></div>
+            </div>
+
+            <!-- Post View Section -->
+            <div id="postViewSection" class="post-view-section hidden">
+                <div class="post-view-header">
+                    <button id="backToList" class="btn btn-secondary">← Back to Posts</button>
+                    <div class="post-actions">
+                        <button id="editPost" class="btn btn-primary">Edit Post</button>
+                        <button id="deletePost" class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+                <div id="postViewContent" class="post-view-content"></div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 BlogCraft. A professional markdown blogging platform.</p>
+        </footer>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast" class="toast hidden">
+        <span id="toastMessage"></span>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
