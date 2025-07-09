@@ -2,6 +2,11 @@
 
 BlogCraft is a simple and elegant markdown-based blog editor and post manager. It allows users to write, preview, save, edit, and delete markdown blog posts right in the browser using localStorage.
 
+## 🔗 Live Demo
+
+Try the live version here:  
+👉 [BlogCraft Live Demo](https://Deenprasath.github.io/blog-website/)  
+
 ## 🚀 Features
 
 - Live Markdown Preview
